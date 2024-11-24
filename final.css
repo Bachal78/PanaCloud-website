@@ -1,0 +1,207 @@
+*body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-size: cover; /* Make sure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  font-family: Arial, sans-serif; /* Set a font for text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    
+    padding: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center; /* Centers icons vertically */
+  }
+  
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    margin: 5px;
+  }
+  
+  .call_Icon {
+    display: flex;
+    align-items: center; /* Aligns text and icons vertically */
+    gap: 10px; /* Adds space between items */
+  }
+  .call_Icon img {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    margin: 5px;
+  }
+
+
+
+  button {
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: medium;
+    background-color: rgba(65, 255, 59, 0.949);
+  }
+
+.Nav-Bar {
+    display: flex;
+    font-family: sans-serif;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 15px;
+    margin: 0 auto; /* Center the navbar */
+    font-size: larger;
+    
+}
+
+.Nbar {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    text-decoration: none;
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Space between nav links */
+    color: black;
+}
+
+footer{
+
+ 
+  display: grid;
+  place-content: center;
+  
+  background-color: green;
+  grid-template-rows: 1fr auto
+
+}
+
+
+ /* Section with background image */
+ .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-image: url('/panapics/greenBackground.png'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust height as needed */
+  flex-direction: column; /* Stack the two sections vertically */
+
+}
+
+/* .set1, .set3{
+  width: 500px;
+  height: 100px;
+  padding-left: 0;
+  margin: 0;
+  background-color:rgb(162, 216, 76);
+} */
+
+.set-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.set1, .set3 {
+  width: 560px;
+  height: 50px;
+  margin: 0;
+  background-color: rgb(162, 216, 76);
+}
+
+.set1,.set2,set3{
+  margin-top: 50px;
+}
+.set2 {
+  
+  color: white;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.section2 {
+  width: 100%;  /* Ensures the section2 takes up the full width of the parent */
+  text-align: center; /* Centers the content inside .section2 */
+  margin-top: 1px;  /* Adds some space between the flex row and the section2 content */
+  font-size: 28px;
+  color: white;
+}
+
+.button1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+ width: auto;
+ background-color:rgb(243, 182, 71);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.green{
+  color: green;
+}
+
+.advan-sect{
+  display: flex;
+  justify-items:center ;
+  gap: 10px;
+  margin: 0;
+  justify-content: center;
+}
+
+.advantage-section{
+  display: grid;
+  text-align: center;
+  justify-items:center;
+  justify-content: center;
+}
+
+.icons{
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  justify-content: space-between;
+  justify-items:center;
+}
+
+.icon-images{
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image content stays within the circular boundary */
+  object-fit: cover; /* Ensures the image scales nicely inside the circle */
+  background-color: rgb(194, 193, 193);
+}
+
+/* About-Section */
+
+.about-section{
+      display: flex;
+      text-align: left;
+      justify-content: center;
+      justify-items: center;
+      margin-left: 30px;
+}
+
+.yellow-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+ width: auto;
+ background-color:orange
+}
