@@ -1,92 +1,79 @@
 *body {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100%;
   background-size: cover; /* Make sure the image covers the entire background */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent image from repeating */
   font-family: Arial, sans-serif; /* Set a font for text */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
-    display: flex;
-    justify-content: space-between; /* Align items to left and right */
-    align-items: center;
-    background-color: black;
-    color: aliceblue;
-    
-    padding: 15px;
-  }
-  
-  .social-icons {
-    display: flex;
-    align-items: center; /* Centers icons vertically */
-  }
-  
-  .social-icons img {
-    width: 25px;
-    height: 25px;
-    border-radius: 20px;
-    margin: 5px;
-  }
-  
-  .call_Icon {
-    display: flex;
-    align-items: center; /* Aligns text and icons vertically */
-    gap: 10px; /* Adds space between items */
-  }
-  .call_Icon img {
-    width: 25px;
-    height: 25px;
-    border-radius: 20px;
-    margin: 5px;
-  }
+  display: flex;
+  justify-content: space-between; /* Align items to left and right */
+  align-items: center;
+  background-color: black;
+  color: aliceblue;
+  padding: 15px;
+}
 
+.social-icons {
+  display: flex;
+  align-items: center; /* Centers icons vertically */
+}
 
+.social-icons img {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  margin: 5px;
+}
 
-  button {
-    border-radius: 5px;
-    width: 100px;
-    height: 40px;
-    padding: 10px;
-    font-size: medium;
-    background-color: rgba(65, 255, 59, 0.949);
-  }
+.call_Icon {
+  display: flex;
+  align-items: center; /* Aligns text and icons vertically */
+  gap: 10px; /* Adds space between items */
+}
+
+.call_Icon img {
+  width: 25px;
+  height: 15px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+button {
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  font-size: medium;
+  background-color: rgba(65, 255, 59, 0.949);
+}
 
 .Nav-Bar {
-    display: flex;
-    font-family: sans-serif;
-    align-items: center; /* Aligns items vertically */
-    justify-content: space-between; /* Space between logo and nav */
-    padding: 15px;
-    margin: 0 auto; /* Center the navbar */
-    font-size: larger;
-    
+  display: flex;
+  font-family: sans-serif;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Space between logo and nav */
+  padding: 15px;
+  margin: 0 auto; /* Center the navbar */
+  font-size: larger;
 }
 
 .Nbar {
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    text-decoration: none;
-    align-items: center; /* Aligns items vertically */
-    gap: 20px; /* Space between nav links */
-    color: black;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  text-decoration: none;
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Space between nav links */
+  color: black;
 }
 
-footer{
-
- 
-  display: grid;
-  place-content: center;
-  
-  background-color: green;
-  grid-template-rows: 1fr auto
-
-}
-
-
- /* Section with background image */
- .section {
+/* Section with background image */
+.section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,16 +83,9 @@ footer{
   background-position: center;
   height: 500px; /* Adjust height as needed */
   flex-direction: column; /* Stack the two sections vertically */
-
+  width: 100%;
+  height: 100%;
 }
-
-/* .set1, .set3{
-  width: 500px;
-  height: 100px;
-  padding-left: 0;
-  margin: 0;
-  background-color:rgb(162, 216, 76);
-} */
 
 .set-wrapper {
   display: flex;
@@ -114,7 +94,6 @@ footer{
   width: 100%;
 }
 
-
 .set1, .set3 {
   width: 560px;
   height: 50px;
@@ -122,11 +101,11 @@ footer{
   background-color: rgb(162, 216, 76);
 }
 
-.set1,.set2,set3{
+.set1, .set2, .set3 {
   margin-top: 50px;
 }
+
 .set2 {
-  
   color: white;
   justify-content: center;
   font-size: 28px;
@@ -145,63 +124,252 @@ footer{
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 50px;
- width: auto;
- background-color:rgb(243, 182, 71);
+  width: auto;
+  background-color: rgb(243, 182, 71);
 }
 
 input[type="radio"] {
   margin-right: 10px;
 }
 
-.green{
+.green {
   color: green;
 }
 
-.advan-sect{
+.advan-sect {
   display: flex;
-  justify-items:center ;
+  justify-items: center;
   gap: 10px;
   margin: 0;
   justify-content: center;
 }
 
-.advantage-section{
-  display: grid;
+.advantage-section {
+  /* display: grid; */
   text-align: center;
-  justify-items:center;
+  justify-items: center;
   justify-content: center;
 }
 
-.icons{
+.icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   text-align: center;
   justify-content: space-between;
-  justify-items:center;
+  justify-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.icon-images{
+.icon-images {
   border-radius: 50%; /* Makes the image circular */
   overflow: hidden; /* Ensures the image content stays within the circular boundary */
   object-fit: cover; /* Ensures the image scales nicely inside the circle */
   background-color: rgb(194, 193, 193);
+  max-width: 100%;
+  height: auto;
 }
 
 /* About-Section */
-
-.about-section{
-      display: flex;
-      text-align: left;
-      justify-content: center;
-      justify-items: center;
-      margin-left: 30px;
+.about-section {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 30px;
+  width: 100%;
+  height: 100%;
 }
 
-.yellow-button{
+.yellow-button {
   padding: 10px 20px;
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 50px;
- width: auto;
- background-color:orange
+  width: auto;
+  background-color: orange;
+}
+
+.bg-design {
+  position: relative; /* Make the container a positioned element */
+  text-align: center; /* Optional: Align text to the center */
+  padding-top: 60px; /* Adjust padding to create space for the star image */
+  background-color: rgb(194, 193, 193);
+  border-radius: 10px; /* Optional: Rounded corners for the card */
+  width: 350px; /* Adjust width */
+  height: 230px;
+  margin-top: 40px; /* Center the card horizontally */
+}
+
+.icon-img {
+  position: absolute; /* Allow precise positioning */
+  top: -45px; /* Half the height of the image to place it centered over the border */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset by half its width */
+  border-radius: 50%; /* Make the image circular */
+  background-color: orange; /* Optional: Background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for effect */
+}
+
+.green-clor {
+  font-size: larger;
+  color: green;
+}
+
+/* Portfolio-Section */
+.port-folio {
+  width: 100%;
+  height: auto;
+  background-color: #000000; /* Optional: Background color for the grid container */
+}
+
+.Bar {
+  width: 1000px;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-left: 850px;
+  color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.grid-container {
+  display: grid; /* Enables grid layout */
+  grid-template-columns: repeat(5, 0fr); /* Defines 5 equal-width columns */
+  grid-template-rows: repeat(2, auto); /* Defines 2 rows with height auto */
+  gap: 0; /* Optional: Space between grid items */
+  padding: 0; /* Optional: Padding for the grid container */
+  align-items: center; /* Center text inside items */
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.grid-item {
+  width: 250px;
+  background-color: #a2a4a2; /* Optional: Background color for grid items */
+  padding: 0px; /* Padding for the content inside grid items */
+  border: 1px solid #ddd; /* Optional: Border for grid items */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Process-Section */
+.bg-designs {
+  position: relative; /* Make the container a positioned element */
+  align-items: center; /* Optional: Align text to the center */
+  padding-top: 60px; /* Adjust padding to create space for the star image */
+  background-color: white;
+  border: 1px solid;
+  border-radius: 50%; /* Optional: Rounded corners for the card */
+  width: 250px; /* Adjust width */
+  height: 160px;
+  margin-right: 0%;
+  margin-top: 40px; /* Center the card horizontally */
+}
+
+.icon-imgs {
+  position: absolute; /* Allow precise positioning */
+  top: -45px; /* Half the height of the image to place it centered over the border */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset by half its width */
+  border-radius: 50%; /* Make the image circular */
+  background-color: orange; /* Optional: Background color */
+  width: 35px;
+  height: 35px; /* Optional: Add border around the icon */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for effect */
+  margin-top: 20px;
+}
+
+.line {
+  position: relative;
+  margin: 0%;
+  width: 150px;
+  height: 2px;
+  border: 1px;
+  background-color: #000000;
+  align-items: center;
+  margin-top: 160px;
+}
+
+.iconS {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.Icons1 {
+  display: flex;
+  justify-content: left;
+  width: 800px;
+  height: auto;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.Icons2 {
+  display: flex;
+  justify-content: left;
+  width: 800px;
+  height: auto;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.Icons3 {
+  display: flex;
+  justify-content: left;
+  width: 800px;
+  height: auto;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.Icons4 {
+  display: flex;
+  justify-content: left;
+  width: 800px;
+  height: auto;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.send-sect {
+  width: 1400px;
+  align-items: center;
+  background-color: rgb(162, 216, 76);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+/* FOOTER-SECTION */
+footer {
+  background-color: green;
+  padding: 38px;
+}
+
+.Footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+  color: white;
+  font-size: large;
+}
+
+.height {
+  width: 3px;
+  height: 400px;
+  background-color: rgb(98, 160, 4);
+  margin: 0;
+  padding: 0;
 }
